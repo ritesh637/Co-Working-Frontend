@@ -9,7 +9,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/office/")
+    fetch("https://co-working-backend.onrender.com/api/office/")
       .then((res) => res.json())
       .then((data) => {
         setOffices(data);

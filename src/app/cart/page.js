@@ -59,7 +59,7 @@ const CartPage = () => {
       if (!userId) throw new Error("Invalid token");
 
       const response = await fetch(
-        "http://localhost:4000/api/payment/create-order",
+        "https://co-working-backend.onrender.com/api/payment/create-order",
         {
           method: "POST",
           headers: {
@@ -115,7 +115,7 @@ const CartPage = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:4000/api/payment/verify-payment",
+        "https://co-working-backend.onrender.com/api/payment/verify-payment",
         {
           method: "POST",
           headers: {

@@ -20,7 +20,7 @@ const Bookings = () => {
       }
 
       try {
-        const response = await axios.get("http://localhost:4000/api/payment/my-bookings", {
+        const response = await axios.get("https://co-working-backend.onrender.com/api/payment/my-bookings", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

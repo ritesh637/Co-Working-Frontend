@@ -26,7 +26,7 @@ const Page = () => {
 
       try {
         const response = await axios.get(
-          "http://localhost:4000/api/payment/my-all-users-bookings",
+          "https://co-working-backend.onrender.com/api/payment/my-all-users-bookings",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

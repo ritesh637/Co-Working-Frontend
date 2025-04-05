@@ -28,7 +28,7 @@ const OTPPage = () => {
   };
 
   const handleResetPassword = async () => {
-    const res = await fetch("http://localhost:4000/api/user/forgotpassword", {
+    const res = await fetch("https://co-working-backend.onrender.com/api/user/forgotpassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, otp, newPassword }),

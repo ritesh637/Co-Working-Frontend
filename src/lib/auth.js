@@ -3,7 +3,7 @@
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const BASE_URL = "http://localhost:4000/api/user";
+const BASE_URL = "https://co-working-backend.onrender.com/api/user";
 
 export const loginUser  = async (email, password) => {
   try {

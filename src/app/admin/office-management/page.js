@@ -20,7 +20,7 @@ const OfficePage = () => {
 
   const fetchOffices = async () => {
     try {
-      const res = await fetch("http://localhost:4000/api/office");
+      const res = await fetch("https://co-working-backend.onrender.com/api/office");
       const data = await res.json();
       setOffices(data);
     } catch (error) {

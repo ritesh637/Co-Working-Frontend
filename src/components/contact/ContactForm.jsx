@@ -25,7 +25,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/api/contact/submit", {
+      const response = await fetch("https://co-working-backend.onrender.com/api/contact/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

@@ -17,7 +17,7 @@ export default function OfficeDetailsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/office/${id}`)
+    fetch(`https://co-working-backend.onrender.com/api/office/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setOffice(data);
